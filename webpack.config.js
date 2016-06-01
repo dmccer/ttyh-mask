@@ -5,15 +5,13 @@ const LessPluginCleanCSS = require('less-plugin-clean-css');
 const LessPluginAutoPrefix = require('less-plugin-autoprefix')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const pkg = require('./package.json');
 
 let plugins = [
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
   }),
-  new webpack.optimize.OccurenceOrderPlugin(),
-  new ExtractTextPlugin(path.parse(process.argv[2]).name + '.css'),
+  new webpack.optimize.OccurenceOrderPlugin()
 ];
 
 if (process.env.NODE_ENV === 'production') {
