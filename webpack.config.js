@@ -3,7 +3,6 @@
 const webpack = require('webpack');
 const LessPluginCleanCSS = require('less-plugin-clean-css');
 const LessPluginAutoPrefix = require('less-plugin-autoprefix')
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const pkg = require('./package.json');
 

@@ -1,13 +1,12 @@
 {
   "name": "ttyh-mask",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "mask",
   "main": "dist/index.js",
   "dest": "dist",
   "dependencies": {
     "classnames": "^2.2.5",
-    "react": "^15.1.0",
-    "ttyh-less-lib": "^1.0.4"
+    "react": "^15.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.9.1",
@@ -16,7 +15,6 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.23.1",
-    "html-webpack-plugin": "^2.19.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "less-plugin-autoprefix": "^1.5.1",
